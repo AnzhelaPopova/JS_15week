@@ -21,24 +21,28 @@ const commentInput = document.getElementById("comment");
 const itemList = document.getElementById("item-list");
 
 function add() {
-  const commentInput = document.getElementById("comment");
   let commentInputValue = commentInput.value;
-  let itemList = document.getElementById("item-list");
 
   if (commentInputValue != 0) {
     let newItem = document.createElement("li");
+
     newItem.textContent = commentInputValue;
     itemList.appendChild(newItem);
     commentInput.value = "";
-    const taskList = document.getElementById("taskList");
     taskList.style.display = "none";
+  }
+
+  var liElements = document.querySelectorAll("li");
+
+  for (var i = 0; i < liElements.length; i++) {
+    var liElement = liElements[i];
+    var checkboxElement = document.createElement("input");
+    checkboxElement.type = "checkbox";
+    liElement.appendChild(checkboxElement);
   }
 }
 
 function del() {
-  let element = document.querySelector("li");
-  element.remove();
-
+  itemList.textContent = "";
   document.getElementById("taskList").style.display = "block";
-  
 }

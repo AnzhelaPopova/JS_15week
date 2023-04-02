@@ -13,6 +13,10 @@
   flex-direction: row;
 }
 
+.text {
+  flex-grow: 1;
+}
+
 .button {
   display: inline-block;
   padding: 10px;
@@ -22,4 +26,9 @@
 
 .notask {
   margin: auto;
+}
+
+.buttonDel {
+  width: 100px;
+  justify-content: flex-end;
 }
