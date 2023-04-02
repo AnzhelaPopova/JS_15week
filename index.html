@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <h3>Добавить задачу <br /></h3>
+      <div class="task">
+        <input for="text" class="text" id="comment" placeholder="Задача" />
+
+        <button class="button" id="button1" onclick=" add() ">Добавить</button>
+      </div>
+
+      <h3>Список задач</h3>
+      <p class="notask" id="taskList">Нет задач</p>
+      <ol id="item-list"></ol>
+      <button class="button" id="button2" onclick=" del() ">
+        Очистить список
+      </button>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

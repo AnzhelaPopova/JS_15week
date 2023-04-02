@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: auto;
+  padding: 20px;
+  justify-items: center;
+  border: solid 1px black;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.notask {
+  margin: auto;
+}
